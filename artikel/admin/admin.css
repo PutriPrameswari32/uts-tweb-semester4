@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #5c5b5b;
+     margin: 5px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .btn {
+    padding: .5rem 1rem;
+    background: #f7a63c;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    font-size: 1.08em;
+    font-family:'Montserrat', sans-serif;
+  }
+  .btn-big {
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+  }
+  .btn:hover{
+      color: white !important;
+      background: rgb(189, 110, 7);
+  }
+  .text-input {
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    color: rgb(97, 89, 89);
+    line-height: 1.5rem;
+    font-size: 1.2em;
+    font-family:'Montserrat', sans-serif;
+  }
+  .msg {
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+  }
+  
+  .success {
+    color: #3a6e3a;
+    border: 1px solid #3a6e3a;
+    background: #bcf5bc;
+  }
+  
+  .error {
+    color: #884b4b;
+    border: 1px solid #884b4b;
+    background: #f5bcbc;
+  }
+
+  /* NAVBAR */
+
+header{
+    background: #ac6839;
+    height: 66px;
+}
+header * {
+    color: white;
+  }
+  header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+  }
+  
+  header .logo-text {
+    margin: 9px;
+    font-family: 'Candal', serif;
+  }
+  
+  header .logo-text span {
+    color: #ffe864;
+  }
+  header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  header ul li {
+    float: left;
+    position: relative;
+  }
+  
+  header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+  }
+  
+  header ul li:hover ul {
+    display: block;
+  }
+  
+  header ul li ul li {
+    width: 100%;
+  }
+  header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: #444;
+  }
+  
+  header ul li ul li a.logout {
+    color: red;
+  }
+  
+  header ul li ul li a:hover {
+    background: #d5d6d6;
+  }
+  
+  header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+  header ul li a:hover {
+    background: #6b3a19;
+    transition: 0.5s;
+  }
+  
+  header .menu-toggle {
+    display: none;
+  }
+  .page-wrapper {
+    min-height: 100%;
+  }
+  
+  .page-wrapper a:hover {
+      /* Ubah */
+    color: #aa5c1c;
+  }
+  /* END NAVBAR */
+
+  /* ADMIN  */
+  .sidebar {
+    float: left;
+    width: 200px;
+    background: wheat;
+    height: 1000px;
+
+  }
+  
+  .sidebar .left-sidebar {
+    
+    height: 100%;
+  }
+  
+  .sidebar .left-sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(167, 92, 23);
+  }
+  
+  .sidebar .left-sidebar ul li a {
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #eb8f17;
+  }
+  
+  .sidebar .left-sidebar ul li a:hover {
+    background: #eb8f17;
+    color: black !important;
+  }
+
+  .main-content{
+      
+      margin-left: 230px;
+      padding: 10px auto;
+
+  }
+  .main-content h1{
+      text-align: center;
+      border-bottom: 2px solid black;
+  }
+  .foto-admin{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .foto-admin img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+
+  }
+  .tambah-artikel{
+    margin-left: 20px;
+  }
+  .tambah-artikel:hover{
+    background: rgb(236, 221, 181);
+    color: black;
+  }
+
+  /* Admin Konten */
+ .artikel img{
+   
+   width: 200px;
+   height: 200px;
+ }
+  
